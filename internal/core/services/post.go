@@ -28,5 +28,5 @@ func (s *PostService) CreatePost(id int, name string, text string) error {
 }
 
 func (s *PostService) DeletePost(id int) error {
-	return nil
+	return s.repo.DeletePost(id)
 }
