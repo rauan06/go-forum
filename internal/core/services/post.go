@@ -23,8 +23,8 @@ func (s *PostService) GetPostByID(id int) (domain.Post, error) {
 	return s.repo.GetPostByID(id)
 }
 
-func (s *PostService) CreatePost(id int, name string, text string) error {
-	return s.repo.CreatePost(id, name, text)
+func (s *PostService) CreatePost(name string, text string) error {
+	return s.repo.CreatePost(name, text)
 }
 
 func (s *PostService) DeletePost(id int) error {
